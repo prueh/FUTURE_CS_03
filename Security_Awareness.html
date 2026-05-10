@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Awareness - Future Interns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --accent-blue: #3b82f6;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --border-light: #e2e8f0;
+            --bg-main: #f8fafc;
+        }
+
+        * { box-sizing: border-box; }
+        
+        body {
+            background-color: var(--bg-main);
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr;
+            margin: 0;
+            padding: 40px 0;
+            place-items: center;
+            color: var(--text-dark);
+            font-family: 'Lato', sans-serif;
+        }
+
+        .slide-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            height: 720px;
+            width: 1280px;
+            padding: 80px;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            border: 1px solid var(--border-light);
+        }
+
+        /* Top Border Accent */
+        .slide-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: var(--primary-blue);
+        }
+
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; color: var(--primary-blue); margin: 0; }
+        h1 { font-size: 64px; text-align: center; color: var(--primary-blue); }
+        .slide-title { 
+            font-size: 44px; 
+            margin-bottom: 40px; 
+            border-left: 8px solid var(--accent-blue); 
+            padding-left: 20px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .tiled-content { display: flex; gap: 30px; margin-top: 20px; }
+        .tile {
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 40px 30px;
+            flex: 1;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .tile:hover { transform: translateY(-5px); border-color: var(--accent-blue); }
+        .icon { font-size: 50px; color: var(--accent-blue); margin-bottom: 20px; }
+        
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        ul { list-style: none; padding: 0; }
+        li { font-size: 22px; margin-bottom: 20px; padding-left: 35px; position: relative; color: var(--text-dark); }
+        li::before { 
+            content: '\f058'; 
+            font-family: "Font Awesome 6 Free"; 
+            font-weight: 900; 
+            position: absolute; 
+            left: 0; 
+            color: var(--accent-blue); 
+        }
+
+        .highlight-number { font-size: 140px; color: var(--accent-blue); font-weight: 700; text-align: center; margin: 0; line-height: 1; }
+        .center-text { text-align: center; }
+        
+        .report-box {
+            background: #eff6ff; 
+            padding: 40px; 
+            border-radius: 20px; 
+            border: 2px dashed var(--accent-blue);
+        }
+        
+        .footer-note { margin-top: 40px; color: var(--text-muted); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <div class="center-text">
+            <p style="text-transform: uppercase; letter-spacing: 4px; color: var(--accent-blue); font-weight: 700; margin-bottom: 10px;">Internal Presentation</p>
+            <h1>CYBER SECURITY<br>AWARENESS 2026</h1>
+            <div style="height: 5px; width: 120px; background: var(--primary-blue); margin: 30px auto;"></div>
+            <p style="font-size: 26px; color: var(--text-muted);">Protecting our digital assets, together.</p>
+            <p class="footer-note">Prepared by: Prudence | Security Analyst Intern</p>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Spotting the Hook (Phishing)</h2>
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fas fa-user-shield"></i></div>
+                <h3>Sender Analysis</h3>
+                <p>Verify the actual email domain. Genuine corporate mail never comes from public domains (@gmail, @yahoo).</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <h3>Artificial Urgency</h3>
+                <p>Attackers use fear. Be wary of "Immediate Action Required" or "Account Expiring in 1 Hour."</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fas fa-link"></i></div>
+                <h3>Hover Check</h3>
+                <p>Always hover over links to see the real destination URL in the bottom corner of your browser.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">The Power of MFA</h2>
+        <div class="two-column">
+            <div>
+                <p class="highlight-number">99%</p>
+                <h3 class="center-text" style="color: var(--text-dark);">Attack Prevention</h3>
+                <p style="text-align: center; margin-top: 15px; font-size: 20px;">Multi-Factor Authentication is the single most effective barrier against password theft.</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">Safety Protocols:</h3>
+                <ul>
+                    <li>Use Authenticator Apps (e.g., Google/Microsoft).</li>
+                    <li>Never approve a prompt you didn't request.</li>
+                    <li>Treat MFA codes like your private password.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">Digital Hygiene</h2>
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fas fa-key"></i></div>
+                <h3>Passphrases</h3>
+                <p>Length is strength. Use four random words instead of complex short passwords.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fas fa-arrow-up-from-bracket"></i></div>
+                <h3>System Updates</h3>
+                <p>Patches fix vulnerabilities. Always restart your machine for security updates.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fas fa-laptop-lock"></i></div>
+                <h3>Lock Screens</h3>
+                <p>Protect your physical workspace. Use "Win + L" whenever you leave your desk.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <h2 class="slide-title">When in Doubt: REPORT</h2>
+        <div class="center-text">
+            <p style="font-size: 28px; margin-bottom: 40px; color: var(--text-dark);">Suspect a breach or clicked a bad link?</p>
+            <div class="report-box">
+                <h3 style="margin-bottom: 10px;">1. Disconnect from Wi-Fi/Network</h3>
+                <h3 style="margin-bottom: 10px;">2. Do NOT enter further credentials</h3>
+                <h3 style="color: #ef4444;">3. Contact the SOC/IT Team Immediately</h3>
+            </div>
+            <p style="margin-top: 40px; font-size: 24px; font-weight: bold; color: var(--primary-blue);">
+                <i class="fas fa-envelope"></i> security-support@futureinterns.com
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
