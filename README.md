@@ -19,6 +19,6 @@ This project was developed for the *Future Interns Cybersecurity Internship* to 
 * assets/: (Optional) Any icons or background images used in the design.
 
 
-## Author
+##Author
 *Prudence*
 Future Interns Cybersecurity Intern
